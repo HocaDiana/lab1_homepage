@@ -51,6 +51,51 @@
       <button type="submit">Send message</button>
     </form>
   </section>
+  <section>
+    <h2>Messages received</h2>
+    <table border="1">
+    <caption>Messages received</caption>
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Message</th>
+            <th scope="col">Date</th>
+            <th scope="col">Priority</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td><a href="mailto:alice@gmail.com">alice@gmail.com</a></td>
+            <td>Hey! Just finished Lab 1!</td>
+            <td>01.01.2026</td>
+            <td><input type="checkbox" id="priority-1" name="priority-1">
+        </tr>
+        <tr>
+            <td>2</td>
+            <td rowspan="3">Bob</td>
+            <td rowspan="3"><a href="mailto:bob@gmail.com">bob@e-uvt.ro</a></td>
+            <td>Hey, how's it going?</td>
+            <td>09.02.2026</td>
+            <td><input type="checkbox" id="priority-1" name="priority-1">
+        <tr>
+            <td>3</td>
+            <td>Do you know the deadline for Lab 3?</td>
+            <td>09.02.2026</td>
+            <td><input type="checkbox" id="priority-1" name="priority-1">
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Can someone share the example solution for Lab 2?</td>
+            <td>21.02.2026</td>
+            <td><input type="checkbox" id="priority-1" name="priority-1">
+        </tr>
+    </tbody>
+</table>
 </main>
     <footer>
         <p>Hoca Diana; Web Design; Semester II(2025-2026)</p>
