@@ -1,0 +1,50 @@
+h1 {
+    color: steelblue;
+    font-style: italic;
+    padding: 10px;
+}
+ 
+.skills-table {
+    border-collapse: separate;
+    border-radius: 10px;
+    overflow: hidden;
+    border-spacing: 0;
+}
+
+
+.skills-table th{
+    background-color: #7c50bd;
+    color: white;
+    text-align: left;
+    padding: 5px;
+}
+
+.skills-table thead th {
+    background-color: #543386;
+    color: white;
+    text-align: left;
+    padding: 5px;
+}
+
+.skills-table td {
+     background-color: white;
+    padding-left:10px;
+    padding-bottom:2px;
+    border:0px;
+    border-spacing:0;
+}
+
+.skills-table td {
+     background-color: #7c3cec;
+    color:white;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.skills-table tbody tr:nth-child(even) td {
+    background-color: #dad5f3;
+    padding-left:10px;
+    padding-bottom:2px;
+    border:0px;
+    border-spacing:0;
+}

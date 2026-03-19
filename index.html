@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>Lab 1 Web Design</title>
+    <link rel="stylesheet" href="style.css">
+  <style>
+    h1 {color:pink;}
+  </style>
 </head>
 <body>
     <header>
@@ -17,6 +21,7 @@
         </ul>
     </nav>
     <main id="main-content">
+        <h1>title1  </h1>
         <section>
             <h2>Welcome to My Web Design Lab</h2>
             <p>This is the main page for my web design lab. Here you will find links to all the tasks and exercises I have completed as part of this course.</p>
@@ -31,7 +36,7 @@
             <img src="dog_meme.jpg" alt="A cute dog sitting with his face in the sun having his eyes closed, looking very happy">
         </section>
         <section>
-            <table border="1">
+            <table border="1" class="skills-table">
     <caption>Personal Skills</caption>
     <thead>
         <tr>
@@ -42,11 +47,12 @@
         <tr>
             <th scope="row" rowspan="3">Programming</th>
             <td>Python</td>
-            <td>JavaScript</td>
+            <td style="background-color: #d4edda; color: green; font-weight: bold;">JavaScript</td>
         </tr>
         <tr>
             <td>C/C++</td>
-            <td>C#</td>
+            <td style="background-color: #fde8e8; color: red; font-weight: bold;">Java</td>
+            
         </tr>
         <tr>
             <td>Java</td>

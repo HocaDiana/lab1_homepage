@@ -1,0 +1,11 @@
+-Paragraph A — only the p rule applies, so it just gets the basic styles: gray text, Georgia font, 1rem size, and a little padding.
+
+Paragraph B — both p and .info apply, but wherever they disagree, .info wins because class selectors beat element selectors. So it gets steelblue text, Arial font, bigger font size, and that blue background. The only thing it still gets from p is line-height, because .info never set one.
+
+Paragraph C — both p and #warning apply, and #warning wins almost everything because IDs beat element selectors. So it gets darkred text, Courier New font, the dashed border, italic, uppercase. Again, line-height comes from p since #warning doesn't set it.
+
+Paragraph D — all four rules apply. #warning.info wins most things since it's the most specific rule. It sets darkorange color, a solid border, slightly bigger font, and normal style. Whatever it doesn't set, falls down to the next most specific rule.
+Color: all four rules try to set it, but #warning.info wins because it's the most specific. So the color ends up darkorange. Font-family: #warning.info never sets a font-family at all, so the browser looks at the other three rules, and #warning wins that fight since IDs beat classes and element selectors. The font ends up as Courier New.
+
+
+-The h1 gets its font-size and font-style from the external file since nothing else sets it. But for color, both files define it, so the internal <style> tag wins because it comes last.
