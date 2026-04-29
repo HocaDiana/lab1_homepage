@@ -20,33 +20,47 @@
   <h1>Contact</h1>
   <section>
     <h2>Send us a message</h2>
-    <form method="post" action="#" aria-label="Contact form">
+    <form id="contactForm" method="post" action="#" aria-label="Contact form">
       <fieldset>
         <legend>Your details</legend>
-        <label for="name">Full name (required)</label>
-        <input type="text" id="name" name="name" required>
+        <label for="fullname">Full name (required)</label>
+        <input type="text" id="fullname" name="fullname" required>
         <label for="email">Email (required)</label>
         <input type="email" id="email" name="email" required>
         <label for="phone">Phone (optional)</label>
         <input type="tel" id="phone" name="phone">
+        <label for="dob">Date of birth (optional)</label>
+        <input type="date" id="dob" name="dob">
+        <label for="age">Age (optional)</label>
+        <input type="number" id="age" name="age">
+        <label for="website">Website (optional)</label>
+        <input type="url" id="website" name="website">
+        <label for="fileUpload">Upload file (optional)</label>
+        <input type="file" id="fileUpload" name="fileUpload">
+        <label for="favColor">Favorite color</label>
+        <input type="color" id="favColor" name="favColor" required>
       </fieldset>
       <fieldset>
         <legend>Your message</legend>
         <label for="subject">Subject (required)</label>
-        <input type="text" id="subject" name="subject" required
-               aria-describedby="subject-hint">
+        <select id="subject" name="subject" required aria-describedby="subject-hint">
+          <option value="">Select a subject</option>
+          <option value="web-design"> Web Design</option>
+          <option value="computer-architecture">Computer Architecture</option>
+          <option value="Calculus">Calculus</option>
+        </select>
         <p id="subject-hint" class="form-hint">e.g. Lab 2, schedule, grading</p>
         <label for="msg">Message (required)</label>
         <textarea id="msg" name="message" rows="5" required></textarea>
       </fieldset>
       <fieldset>
         <legend>How did you hear about us?</legend>
-        <label for="hear-course">Course / university</label>
-        <input type="radio" id="hear-course" name="hear" value="course">
-        <label for="hear-search">Search / web</label>
-        <input type="radio" id="hear-search" name="hear" value="search">
-        <label for="hear-other">Other</label>
-        <input type="radio" id="hear-other" name="hear" value="other">
+        <label for="heardAbout-course">Course / university</label>
+        <input type="radio" id="heardAbout-course" name="heardAbout" value="course">
+        <label for="heardAbout-search">Search / web</label>
+        <input type="radio" id="heardAbout-search" name="heardAbout" value="search">
+        <label for="heardAbout-other">Other</label>
+        <input type="radio" id="heardAbout-other" name="heardAbout" value="other">
       </fieldset>
       <button type="submit">Send message</button>
     </form>
@@ -73,7 +87,7 @@
             <td><a href="mailto:alice@gmail.com">alice@gmail.com</a></td>
             <td>Hey! Just finished Lab 1!</td>
             <td>01.01.2026</td>
-            <td><input type="checkbox" id="priority-1" name="priority-1">
+            <td><input type="checkbox" id="priority-1" name="priority-1"></td>
         </tr>
         <tr>
             <td>2</td>
@@ -81,18 +95,19 @@
             <td rowspan="3"><a href="mailto:bob@gmail.com">bob@e-uvt.ro</a></td>
             <td>Hey, how's it going?</td>
             <td>09.02.2026</td>
-            <td><input type="checkbox" id="priority-1" name="priority-1">
+            <td><input type="checkbox" id="priority-2" name="priority-1"></td>
+        </tr>
         <tr>
             <td>3</td>
             <td>Do you know the deadline for Lab 3?</td>
             <td>09.02.2026</td>
-            <td><input type="checkbox" id="priority-1" name="priority-1">
+            <td><input type="checkbox" id="priority-3" name="priority-1"></td>
         </tr>
         <tr>
             <td>4</td>
             <td>Can someone share the example solution for Lab 2?</td>
             <td>21.02.2026</td>
-            <td><input type="checkbox" id="priority-1" name="priority-1">
+            <td><input type="checkbox" id="priority-4" name="priority-1"></td>
         </tr>
     </tbody>
 </table>
@@ -100,5 +115,6 @@
     <footer>
         <p>Hoca Diana; Web Design; Semester II(2025-2026)</p>
     </footer>
+    <script src="contact.js"></script>
 </body>
 </html>
